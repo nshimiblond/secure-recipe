@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="20dp"
+    tools:context=".AddNewRecipeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletextview"
+        android:textColor="@color/black"
+        android:text="Add New Recipe"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundedcorner">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColor="@color/black"
+            android:id="@+id/titleinput"
+            android:padding="10dp"
+            android:background="#ffc0cb"
+            android:layout_margin="10dp"/>
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Image source"
+             android:textColor="@color/black"
+             android:id="@+id/imageinput"
+             android:padding="10dp"
+             android:background="#ffc0cb"
+             android:layout_margin="10dp"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discription"
+            android:id="@+id/discription"
+            android:padding="10dp"
+            android:background="#ffc0cb"
+            android:lines="10"
+            android:layout_margin="10dp"
+            android:gravity="top"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebtn"
+        android:text="SAVE RECIPE"
+        android:layout_gravity="center"
+        android:backgroundTint="#ffc0cb"
+        android:textColor="@color/white"/>
+</LinearLayout>
